@@ -10,3 +10,4 @@ function Button({ name, type = "button", onButtonClick }: ButtonProps) {
 }
 
 export default Button;
+
