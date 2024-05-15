@@ -1,65 +1,57 @@
 import styled from "@emotion/styled";
-import { WeatherBack } from 'assets';
 
+import { WeatherBack } from "assets";
 
 export const WeatherWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-image: url(${WeatherBack})
-  `
-export const WeatherHeader =styled.div`
-    width: 100%;
-    height: 50px;
-    //padding:20px 20px;
-    //margin-left: 50px;
-    //margin-right: 50px;
-    background-color:lightblue;
-    opacity:0.3;
-    color: darkslategrey;
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    font-family: 'Gill Sans';
-    font-style: italic;
-    font-weight: bold; 
-`
+  background: url(${WeatherBack});
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+export const Header = styled.header`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 25px 85px;
+  border-bottom: 1px #d2d2d2 solid;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    rgba(18, 45, 77, 0.5);
+  backdrop-filter: blur(8px);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+`;
+
+export const Main = styled.main`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+`;
 
 export const WeatherForm = styled.form`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  //padding-top: 100px;
-  gap: 30px;
-  width: 600px;
-  height: 200px;
-  padding: 60px;
-  border: 2px solid black;
-  border-radius: 4px;
-  background-color: transparent;
-`
+  flex-direction: column;
+  align-items: center;
+  width: 709px;
+  gap: 60px;
+  margin-top: 140px;
+`;
 
-export const WeatherMainContainer =styled.div`
-display: flex;
-justify-content: center;
-margin-top:100px;
-`
-export const Button =styled.button`
-height: 40px;
-width: 50px;
-border: 1px solid black;
-border-radius: 4px;
-background-color: aquamarine;
-`
-
-export const InputComp = styled.input`
+export const InputButtonWrapper = styled.div`
+  display: flex;
   width: 100%;
-  height: 50px;
-  padding: 12px;
-  outline: none;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 16px;
+  gap: 12px;
+`;
 
-
-`
+export const WeatherButtonWrapper = styled.div`
+  width: 146px;
+`;
